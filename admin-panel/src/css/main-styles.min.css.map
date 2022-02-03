@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,OAAO,AAAA,CACL,OAAO,CAAE,IAAI,CACd",
+    "sources": [
+        "../assets/main-styles.scss"
+    ],
+    "names": [],
+    "file": "main-styles.min.css"
+}

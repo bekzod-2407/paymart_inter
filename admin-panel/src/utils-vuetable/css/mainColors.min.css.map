@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAGA,AAAA,OAAO,AAAA,CACH,UAAU,CAJD,OAAO,CAKhB,WAAW,CAJA,OAAO,CAKrB",
+    "sources": [
+        "../css-variables/mainColors.scss"
+    ],
+    "names": [],
+    "file": "mainColors.min.css"
+}

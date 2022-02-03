@@ -1,0 +1,71 @@
+$green-color:#72E019;
+$green-shadow: #64c515;
+
+.slick-dots{
+    display: flex !important;
+    justify-content: center;
+    li{
+        list-style: none !important;
+        list-style: none !important;
+        margin: 5px;
+        border: 1px solid #ccc;
+        height: 12px;
+        width: 12px;
+        border-radius: 50% !important;
+        cursor: pointer;
+    }
+
+    .slick-active{
+        background-color: $green-color;
+        border-color: $green-shadow;
+    }
+}
+  
+.slick-custom-prev {
+    background-color: #fff !important;
+    cursor: pointer;
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    transform: none;
+    bottom: 20px;
+    right: 0;
+    width: 25px;
+    height: 25px;
+    display: inline-block ;
+    margin: 0px 2px;
+    z-index: 99;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    &:hover{
+        box-shadow: 0 0 3px $green-color;
+        border-color: $green-color;
+        i{
+            color: $green-color;
+        }
+    }
+}
+.slick-custom-next{
+    background-color: #fff !important;
+    cursor: pointer;
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    transform: none;
+    bottom: 20px;
+    right: -30px;
+    width: 25px;
+    height: 25px;
+    display: inline-block !important;
+    margin: 0px 2px;
+    z-index: 99;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    &:hover{
+        box-shadow: 0 0 3px $green-color;
+        border-color: $green-color;
+        i{
+            color: $green-color;
+        }
+    }
+}

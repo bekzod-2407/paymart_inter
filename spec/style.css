@@ -1,0 +1,118 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+.wrapper{
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container{
+  width: 1200px;
+  margin:auto;
+}
+.item-wrapper{
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  color:white;
+}
+.item-wrapper .desc-content{
+  width: 50%;
+  background-color: #1c1938;
+  padding: 60px;
+}
+.item-wrapper .img-content{
+  width: 50%;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.item-wrapper .img-content:before{
+  content:"";
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top:0;
+  position: absolute;
+  background-color:rgba(150,	0,	231, 0.4)
+}
+.desc-content h3 b{
+  color:#8c5cb0;
+}
+.desc-content h3{
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+.desc-content p {
+  color:#b1afc4;
+  margin-bottom:80px;
+  font-style: 16px;
+}
+.number-components{
+  display: flex;
+}
+.number-components .item-wrapper{
+  width: 33.3%;
+}
+.number-components .item{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.number-components .item p{
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.number-components .item h4{
+  font-size:24px;
+  margin-bottom: 10px;
+}
+@media(max-width:1200px){
+  .container{
+    width: 900px;
+    margin:auto;
+  } 
+}
+@media(max-width:991px){
+  .container{
+    padding-left: 15px;
+    padding-right: 15px;
+    width: auto;
+    margin:auto;
+  }
+  .item-wrapper{
+    flex-direction: column-reverse;
+  }
+  .item-wrapper .img-content{
+    width: 100%;
+    min-height: 400px;
+  }
+  .item-wrapper .desc-content{
+    width: 100%;
+    padding: 40px;
+  }
+  .wrapper{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    height:auto;
+  }
+  .number-components{
+    flex-direction: column;
+  }
+  .number-components .item-wrapper{
+    width: 100%;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+}
+@media(max-height:400px){
+  .wrapper{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    height: auto;
+  }
+}
